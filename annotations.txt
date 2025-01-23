@@ -1,0 +1,6 @@
+Projeto Slide do curso ORIGAMID ES6+
+
+CSS:
+prop 'flex-shrink: 0' impede que um imagem seja forçosamente
+redimensionada de modo que cada elemento filho caiba na tela,
+ou seja, preserva as dimensões da imagem.
