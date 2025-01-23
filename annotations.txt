@@ -1,6 +1,15 @@
 Projeto Slide do curso ORIGAMID ES6+
 
-CSS:
-prop 'flex-shrink: 0' impede que um imagem seja forçosamente
-redimensionada de modo que cada elemento filho caiba na tela,
-ou seja, preserva as dimensões da imagem.
+Agora, será desenvolvida a navegação pelas imagens
+com Javascript.
+
+Como mover a imagem?
+
+[into style.css]
+
+prop 'transform: <translateX || translate3d>'
+
+-> value 'translateX' não usa a placa gráfica
+-> value 'translate3d' usa a placa gráfica
+
+
