@@ -1,15 +1,11 @@
-Projeto Slide do curso ORIGAMID ES6+
+Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-Agora, será desenvolvida a navegação pelas imagens
-com Javascript.
+Aula 1203 (Atualizar Distâncias)
 
-Como mover a imagem?
+Dica para atualizar as distâncias de um elemento em tempo real:
 
-[into style.css]
+event: 'mousemove';
+callback: 'onMove';
+function: 'updateDistance(distanceX)';
 
-prop 'transform: <translateX || translate3d>'
-
--> value 'translateX' não usa a placa gráfica
--> value 'translate3d' usa a placa gráfica
-
-
+HTMLElement.prototype.style.transform = `translate3d(${distanceX}px, 0, 0)`;
