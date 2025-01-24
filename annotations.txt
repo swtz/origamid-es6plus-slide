@@ -1,7 +1,3 @@
 Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-Aula 1205 (Slide Config)
-
-DOM:
-'HTMLElement.prototype.offsetWidth'
-retorna o valor da largura total do element.
+Aula 1206 (Next n' Prev Navigation)
