@@ -85,6 +85,14 @@ export default class Slide {
     this.slidesIndexNav(index);
   }
 
+  activePrevSlide() {
+    if (this.index.prev !== undefined) this.changeSlide(this.index.prev);
+  }
+
+  activeNextSlide() {
+    if (this.index.next !== undefined) this.changeSlide(this.index.next);
+  }
+
   init() {
     this.bindEvents();
     this.addSlideEvents();
