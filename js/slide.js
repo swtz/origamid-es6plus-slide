@@ -69,9 +69,15 @@ export default class Slide {
     return this.slideArray;
   }
 
+  changeSlide(index) {
+    this.moveSlide(this.slideArray[index].position);
+  }
+
   init() {
     this.bindEvents();
     this.addSlideEvents();
+    this.slidesConfig();
+    this.changeSlide(4);
     return this;
   }
 }
