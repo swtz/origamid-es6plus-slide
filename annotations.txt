@@ -1,12 +1,25 @@
-Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
+// Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-Aula 1209 (Slide Pagination)
+// Aula 1209 (Slide Pagination)
 
-CSS:
-prop 'text-indent' move o texto com base no valor em 'px'.
-É útil para ocultar o texto de um elemento que fora usado
-para identificá-lo na tela.
+class SlideNav {
+  // another methods...
 
-Ao lidar com o elemento 'a', para que sejam aplicadas
-as propriedades CSS comuns à uma tag 'li', por exemplo,
-é preciso setar ela como 'display: block'.
+  eventControl(item, index) {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.changeSlide(index);
+    });
+  }
+
+  addControl(customControl) {
+    this.control = document.querySelector(customControl) || this.createControl();
+    this.controlArray = [...this.control.children];
+    this.controlArray.forEach((this.eventControl));
+  }
+}
+
+// [row 18th]: 'this.controlArray.forEach((this.eventControl));'
+// Como a assinatura do método 'eventControl(item, index){}' preconiza
+// o comportamento do método 'forEach', basta passá-lo como arg0 desse
+// método.
