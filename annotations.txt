@@ -2,24 +2,25 @@
 
 // Aula 1209 (Slide Pagination)
 
-class SlideNav {
-  // another methods...
+// É possível criar eventos no Javascript:
 
-  eventControl(item, index) {
-    item.addEventListener('click', (event) => {
-      event.preventDefault();
-      this.changeSlide(index);
-    });
+class SlideNav {
+  constructor() {
+    this.changeEvent = new Event('changeEvent');
   }
 
-  addControl(customControl) {
-    this.control = document.querySelector(customControl) || this.createControl();
-    this.controlArray = [...this.control.children];
-    this.controlArray.forEach((this.eventControl));
+  changeSlide() {
+    this.HTMLElement.prototype.dispatchEvent(this.changeEvent);
   }
 }
 
-// [row 18th]: 'this.controlArray.forEach((this.eventControl));'
-// Como a assinatura do método 'eventControl(item, index){}' preconiza
-// o comportamento do método 'forEach', basta passá-lo como arg0 desse
-// método.
+// O método 'dispatchEvent' faz com que o 'HTMLElement' EMITA o evento.
+// O próprio 'HTMLElement' pode ESCUTAR o evento, assim disparando uma
+// função de callback.
+
+// Ou seja, toda vez que 'changeSlide' é chamado, o 'HTMLElement' EMITE o
+// evento, assim 'HTMLElement.prototype.addEventListener('changeEvent', callback)'
+// é acionado, disparando a callback.
+
+// 'dispatchEvent' possibilita que 'addEventListener' dispare sua callback toda
+// vez que ele for chamado, ou seja, toda vez que 'changeSlide' for chamado.
