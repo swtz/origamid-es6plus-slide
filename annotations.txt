@@ -1,14 +1,3 @@
 Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-Aula 1208 (Slide Navigation)
-
-No momento, a classe 'Slide' está com suas funcionalidades
-prontas. A partir de agora, serão adicionados alguns
-complementos com respeito ao site, como os botões de navegação.
-
-Prestar atenção nos métodos:
-'slideConfig' e 'changeSlide', pois a aplicação
-precisa desses métodos para ter um comportamento adequado.
-
-Assim, será criada uma classe 'SlideNav' e essa ESTENDERÁ
-a classe 'Slide'.
+Aula 1209 (Slide Pagination)
