@@ -1,3 +1,23 @@
 Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-Aula 1206 (Next n' Prev Navigation)
+Aula 1207 (Slide Resize)
+
+CSS:
+Dica para "forçar" uma borda arredondada num determinado elemento:
+`
+<css-selector> {
+  border-radius: 4px;
+  overflow: hidden;
+}
+`
+
+#!important:
+O evento 'resize' é acionado em dispositivos mobile quando o usuário
+alterna a orientação da tela, por isso é importante desenvolver
+uma função que lida com esse evento, além de aplicar a função
+do tipo 'debounce' à sua callback, pois o evento 'resize' é disparado
+centenas de vezes e consequentemente sua callback também.
+
+Como boa prática, a função de debounce é aplicada no momento que se faz
+o 'binding' da callback do evento.
+ 
