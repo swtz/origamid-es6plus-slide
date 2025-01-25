@@ -174,13 +174,20 @@ export class SlideNav extends Slide {
     item.addEventListener('click', (event) => {
       event.preventDefault();
       this.changeSlide(index);
+      this.activeControlItem();
     });
+  }
+
+  activeControlItem() {
+    this.controlArray.forEach((control) => control.classList.remove(this.activeClass));
+    this.controlArray[this.index.active].classList.add(this.activeClass);
   }
 
   addControl(customControl) {
     this.control = document.querySelector(customControl) || this.createControl();
     this.controlArray = [...this.control.children];
     this.controlArray.forEach((this.eventControl));
+    this.activeControlItem();
   }
 
   bindControlEvents() {
