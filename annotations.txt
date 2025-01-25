@@ -1,3 +1,12 @@
 Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
 Aula 1207 (Slide Resize)
+
+CSS:
+Dica para "forçar" uma borda arredondada num determinado elemento:
+`
+<css-selector> {
+  border-radius: 4px;
+  overflow: hidden;
+}
+`
