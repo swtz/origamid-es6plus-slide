@@ -1,3 +1,12 @@
 Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
 Aula 1209 (Slide Pagination)
+
+CSS:
+prop 'text-indent' move o texto com base no valor em 'px'.
+É útil para ocultar o texto de um elemento que fora usado
+para identificá-lo na tela.
+
+Ao lidar com o elemento 'a', para que sejam aplicadas
+as propriedades CSS comuns à uma tag 'li', por exemplo,
+é preciso setar ela como 'display: block'.
