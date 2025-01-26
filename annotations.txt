@@ -1,26 +1,3 @@
 // Projeto Slide do curso ORIGAMID ES6+ | Módulo 12 (Slide)
 
-// Aula 1209 (Slide Pagination)
-
-// É possível criar eventos no Javascript:
-
-class SlideNav {
-  constructor() {
-    this.changeEvent = new Event('changeEvent');
-  }
-
-  changeSlide() {
-    this.HTMLElement.prototype.dispatchEvent(this.changeEvent);
-  }
-}
-
-// O método 'dispatchEvent' faz com que o 'HTMLElement' EMITA o evento.
-// O próprio 'HTMLElement' pode ESCUTAR o evento, assim disparando uma
-// função de callback.
-
-// Ou seja, toda vez que 'changeSlide' é chamado, o 'HTMLElement' EMITE o
-// evento, assim 'HTMLElement.prototype.addEventListener('changeEvent', callback)'
-// é acionado, disparando a callback.
-
-// 'dispatchEvent' possibilita que 'addEventListener' dispare sua callback toda
-// vez que ele for chamado, ou seja, toda vez que 'changeSlide' for chamado.
+// Aula 1210 (Custom Controls)
